@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wb-_sk9)0@$fc005h(wu-f$j4dpw&=v5ut$_&r()1d$w*#z1)4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["ifeoma-signup-form.up.railway.app", "localhost"]
 
 
 # Application definition
@@ -128,3 +128,6 @@ STATICFILES_DIRS = (
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CSRF_TRUSTED_ORIGINS = [
+    "https://ifeoma-signup-form.up.railway.app"
+]
