@@ -16,7 +16,7 @@ class DetailsAdmin(admin.ModelAdmin):
         writer.writerow(['Full Name', 'Location', 'Email', 'Phone Number'])
 
         for obj in queryset:
-            writer.writerow([obj.full_name, obj.location, obj.email, obj.phone_number])
+            writer.writerow([obj.full_name, obj.location, obj.email, str(obj.phone_number)])
 
         return response
 
